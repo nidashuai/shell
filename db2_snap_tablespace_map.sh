@@ -7,23 +7,9 @@ case $1 in
   type)
     funName=fType
     ;;
-  lock)
-    funName=fLock
-    ;;
-  sort)
-    funName=fSort
-    ;;
-  bp)
-    funName=fBufferpool
-    ;;
-  stmt)
-    funName=fStatement
-    ;;
-  log)
-    funName=fLog
-    ;;
   *)
-    echo "Input parameters are incorrect.This parameter should be fs, app, lock, sort, bp, stmt, log."
+    echo "Input parameters are incorrect.This parameter should be state, type."
+    ;;
 esac
 
 # Excute function
