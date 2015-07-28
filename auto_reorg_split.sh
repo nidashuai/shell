@@ -1,6 +1,10 @@
 #!/usr/bin/sh
 #
 #
+#生成reorg.txt
+db2 connect to database  
+db2 reorgchk current statistics on table all > reorg.txt
+db2 terminate
 #定义变量
 #将reorg.txt文件分割成reorg_table.txt和reorg_index.txt
 awk '{
